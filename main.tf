@@ -68,9 +68,9 @@ resource "azurerm_linux_web_app" "taskboard_app" {
   }
 }
 
-resource "azurerm_app_service_source_control" "taskboard_source_control" {
-  app_id                 = azurerm_linux_web_app.taskboard_app.id
-  repo_url               = var.repo_url
-  branch                 = "main"
-  use_manual_integration = false
-}
+# resource "azurerm_app_service_source_control" "taskboard_source_control" {
+#   app_id                 = azurerm_linux_web_app.taskboard_app.id
+#   repo_url               = var.repo_url
+#   branch                 = "main"
+#   use_manual_integration = true
+# }
